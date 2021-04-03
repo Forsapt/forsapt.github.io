@@ -1,0 +1,38 @@
+.cards{
+    /*max-width: 500px;*/
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    text-decoration: none;
+    max-width: 300px;
+    width: 100%;
+    margin: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #d7d7d7;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card__image img {
+    width: 100%;
+}
+
+.card__content{
+    padding: 10px;
+}
+
+.card__title{
+    font-size: 30px;
+}
