@@ -54,7 +54,7 @@
         </div>
     </a>
 </div>
-    <script>
+<script>
   let host = "pixel-track-forsapt.herokuapp.com"
   let r = Math.random().toString(36).substring(7);
   let trackerId = 1;
@@ -62,10 +62,14 @@
   if (path[path.length-1] === '/'){
     path = path.substring(0, path.length-1)
   }
+  if(path == ""){
+    path = '/'
+  }
   let img = new Image();
   img.src = "http://"+host+"/api/record/pixel.png?path="+path+"&trackerId="+trackerId+"&r="+r
   document.body.appendChild(img);
 </script>
+
 
 </body>
 </html>
