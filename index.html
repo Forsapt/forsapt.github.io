@@ -2,30 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Serif:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <div class="header" style="justify-content: center">
-    <a href="/" class="header__logo">Forsapt</a>
+    <a class="header__logo" href="/">Forsapt</a>
 </div>
 <div class="cards">
     <a class="card" href="article.html">
-        <div class="card__image"><img src="https://i.picsum.photos/id/373/4896/3264.jpg?hmac=vTrYn2mUEwsfJnkaoiBskuIlDUaM3Xim-TFA_SK6lAg" alt=""></div>
+        <div class="card__image"><img alt="" src="https://cs9.pikabu.ru/post_img/2016/10/13/6/1476352445164888046.jpg">
+        </div>
         <div class="card__content">
-            <div class="card__title">Lorem ipsum dolor.</div>
-            <div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, doloribus
-                ducimus eius et illum ipsa nemo neque odit provident quae qui recusandae, unde voluptate voluptatum.
+            <div class="card__title">Готовим идеальный кофе</div>
+            <div class="card__description">
+                10 ценных советов
             </div>
         </div>
     </a>
     <a class="card" href="article.html">
-        <div class="card__image"><img src="https://i.picsum.photos/id/376/5450/3623.jpg?hmac=SqetbGmid_0u1jDln90xGDYNCHDOpwshsaTY-t6Wly8" alt=""></div>
+        <div class="card__image"><img
+                alt=""
+                src="https://i.picsum.photos/id/376/5450/3623.jpg?hmac=SqetbGmid_0u1jDln90xGDYNCHDOpwshsaTY-t6Wly8"></div>
         <div class="card__content">
             <div class="card__title">Alias, aliquid nulla.</div>
             <div class="card__description">Amet beatae culpa cupiditate deserunt dicta earum eius esse est explicabo
@@ -34,7 +38,9 @@
         </div>
     </a>
     <a class="card" href="article.html">
-        <div class="card__image"><img src="https://i.picsum.photos/id/388/4288/2848.jpg?hmac=jI0esfle2wGC9akC8N7FqhxiScGUP7oEnv01TuIaNhk" alt=""></div>
+        <div class="card__image"><img
+                alt=""
+                src="https://i.picsum.photos/id/388/4288/2848.jpg?hmac=jI0esfle2wGC9akC8N7FqhxiScGUP7oEnv01TuIaNhk"></div>
         <div class="card__content">
             <div class="card__title">Nostrum quasi, tenetur.</div>
             <div class="card__description">Consectetur natus nobis pariatur perferendis possimus sunt! A accusamus
@@ -44,7 +50,9 @@
         </div>
     </a>
     <a class="card" href="article.html">
-        <div class="card__image"><img src="https://i.picsum.photos/id/395/4080/2720.jpg?hmac=6ybpNpyHLfr4TMOiCDCk-hXBFVHPrOnOc5k-QIrspjY" alt=""></div>
+        <div class="card__image"><img
+                alt=""
+                src="https://i.picsum.photos/id/395/4080/2720.jpg?hmac=6ybpNpyHLfr4TMOiCDCk-hXBFVHPrOnOc5k-QIrspjY"></div>
         <div class="card__content">
             <div class="card__title">Architecto, et, quae?</div>
             <div class="card__description">Accusamus aliquid animi eveniet ipsa, ipsam maxime non porro quaerat,
@@ -59,14 +67,14 @@
   let r = Math.random().toString(36).substring(7);
   let trackerId = 1;
   let path = window.location.href.split('//')[1].split('/').splice(1).join('/').split("#")[0].split('?')[0];
-  if (path[path.length-1] === '/'){
-    path = path.substring(0, path.length-1)
+  if (path[path.length - 1] === '/') {
+    path = path.substring(0, path.length - 1)
   }
-  if(path == ""){
+  if (path == "") {
     path = '/'
   }
   let img = new Image();
-  img.src = "http://"+host+"/api/record/pixel.png?path="+path+"&trackerId="+trackerId+"&r="+r
+  img.src = "http://" + host + "/api/record/" + r + ".png?path=" + path + "&trackerId=" + trackerId + "&r=" + r
   document.body.appendChild(img);
 </script>
 
